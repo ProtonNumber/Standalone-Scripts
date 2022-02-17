@@ -60,7 +60,7 @@ var curriedsubchk = function(post, channel) {
 	}
 }
 
-discord.connect({token: 'DISCORD_TOKEN' });
+discord.connect({token: DISCORD_TOKEN });
 discord.Dispatcher.on(Events.MESSAGE_CREATE, e => {
 	let channel = e.message.channel
 	let messages = channel.messages
